@@ -18,7 +18,7 @@ function choosePrimes(arr) {
             primeArr.push(element)
         }
     }
-    return arr;
+    return primeArr;
 }
 
 

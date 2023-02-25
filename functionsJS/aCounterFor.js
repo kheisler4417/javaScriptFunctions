@@ -8,5 +8,5 @@ function aCounter(word) {
       }
     }
 
-    return count;
+  return count;
   }

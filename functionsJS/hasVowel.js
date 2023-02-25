@@ -5,5 +5,5 @@ function hasVowel(str) {
         return true;
       }
     }
-    return false;
+    return false
   }

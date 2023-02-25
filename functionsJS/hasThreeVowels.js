@@ -11,5 +11,5 @@ function hasThreeVowels(str) {
       }
     }
 
-    return false;
+    return false
   }

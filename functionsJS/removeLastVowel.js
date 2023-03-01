@@ -1,3 +1,7 @@
+// Write a function removeLastVowel(word) that
+// takes in a string and returns the string with
+// its last vowel removed.
+
 function removeLastVowel(word) {
     let vowels = "aeiouAEIOU";
     let lastVowelIndex = -1;

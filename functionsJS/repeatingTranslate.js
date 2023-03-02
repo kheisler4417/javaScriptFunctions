@@ -15,7 +15,7 @@
 //
 // Can you reduce the problem into helper functions?
 
-// Your code here
+
 function repeatingTranslate(sentence) {
     const words = sentence.split(" ");
     const translatedWords = words.map((word) => translateWord(word));
@@ -28,11 +28,10 @@ function translateWord(word) {
     }
 
     const lastChar = word[word.length - 1];
-    const secondLastChar = word[word.length - 2];
     const lastVowelIndex = findLastVowelIndex(word);
 
     if (isVowel(lastChar)) {
-        return word + word.toLowerCase();
+        return word + word;
     } else {
         const suffix = word.substring(lastVowelIndex);
         return word + suffix.toLowerCase();
@@ -51,6 +50,8 @@ function findLastVowelIndex(word) {
 function isVowel(char) {
     return ["a", "e", "i", "o", "u"].includes(char.toLowerCase());
 }
+
+
 
 
 // console.log(repeatingTranslate("we like to go running fast"));  // "we likelike to go runninging fastast"
